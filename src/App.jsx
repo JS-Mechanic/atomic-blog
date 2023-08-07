@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {createRandomPost} from "./utilities.js";
 import {PostProvider, usePosts} from "./PostProvider.jsx";
+// import Test from "./Test.jsx";
 
 function App() {
 	const [isFakeDark, setIsFakeDark] = useState(false);
@@ -108,14 +109,17 @@ function List() {
 	const {posts} = usePosts();
 
 	return (
-		<ul>
-			{posts.map((post, i) => (
-				<li key={i}>
-					<h3>{post.title}</h3>
-					<p>{post.body}</p>
-				</li>
-			))}
-		</ul>
+		<>
+			<ul>
+				{posts.map((post, i) => (
+					<li key={i}>
+						<h3>{post.title}</h3>
+						<p>{post.body}</p>
+					</li>
+				))}
+			</ul>
+			{/*<Test />*/}
+		</>
 	);
 }
 
