@@ -63,9 +63,9 @@ function App() {
 			<Archive
 				archiveOptions={archiveOptions}
 				onAddPost={handleAddPost}
-				{/*useState setter functions are already memoized by react itself*/}
 				setIsFakeDark={setIsFakeDark}
 			/>
+			{/*useState setter functions are already memoized by react itself*/}
 			<Footer />
 		</section>
 	);
