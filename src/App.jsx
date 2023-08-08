@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import {createRandomPost} from "./utilities.js";
-import {PostProvider, usePosts} from "./PostProvider.jsx";
+import {PostProvider, usePosts} from "./PostContext.jsx";
 // import Test from "./Test.jsx";
 
 function App() {
